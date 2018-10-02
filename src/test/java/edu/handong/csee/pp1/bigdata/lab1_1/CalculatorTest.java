@@ -28,7 +28,8 @@ public class CalculatorTest {
 	
 	@Test
 	public void testMod() {
-		// TODO Complete this test case
+		Calculator myCalc = new Calculator();
+		assertEquals(myCalc.mod(6, 4),2);
 	}
 
 	@Test
