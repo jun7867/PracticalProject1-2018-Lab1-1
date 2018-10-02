@@ -11,7 +11,7 @@ public class CalculatorTest {
 		String[] args = {"2", "3"};
 		Calculator.main(args);
 		// assertEquals compares the result of an method call with the expected result.
-		assertEquals(Calculator.getCount(),4);
+		assertEquals(Calculator.getCount(),5);
 	}
 	
 	@Test
@@ -45,13 +45,13 @@ public class CalculatorTest {
 		assertEquals(myCalc.divide(2, 0),Double.NaN, 0.00000001);
 	}
 	@Test
-	public void getCount() {
+	public void abs() {
 		Calculator myCalc = new Calculator();
-		assertEquals(Calculator.getCount(),4);
+		assertEquals(myCalc.abs(2, 3),1);
 	}
 	@Test
 	public void getLocalCount() {
 		Calculator myCalc = new Calculator();
-		assertEquals(myCalc.getLocalCount(),4);
+		assertEquals(myCalc.getLocalCount(),5);
 	}
 }

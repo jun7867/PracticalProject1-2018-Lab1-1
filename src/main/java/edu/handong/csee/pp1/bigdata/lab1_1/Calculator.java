@@ -69,6 +69,7 @@ public class Calculator {
 		print("SUB:" , this.subtract(firstIntArg, secondIntArg));
 		print("*:" , multiply(firstIntArg, secondIntArg));
 		print("DV:" , divide(firstIntArg,secondIntArg));
+		print("mod:" , mod(firstIntArg,secondIntArg));
 	}
 
 	
@@ -116,11 +117,22 @@ public class Calculator {
 		
 		return first%second;
 	}
-
-	static int getCount() {
-		return countForAnyCompution;
+	int abs(int first, int second) {
+		countForAnyCompution++;
+		localCount++;
+		if(first-second<0) {
+			return (first-second)*-1;
+		}
+		else {
+			return first-second;
+		}
+		
 	}
 
+	 static int getCount() {
+		return countForAnyCompution;
+	}
+	 
 	int getLocalCount() {
 		return localCount;
 	}
