@@ -31,7 +31,7 @@ public class Calculator {
 	// private member variable is used by only one object can can't be shared by other objects
 	//
 
-	private int localCount = 0;
+	static int localCount = 0;
 
 
 	/**

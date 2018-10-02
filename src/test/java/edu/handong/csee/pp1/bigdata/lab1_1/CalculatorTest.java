@@ -34,7 +34,8 @@ public class CalculatorTest {
 
 	@Test
 	public void testMultiply() {
-		// TODO Complete this test case
+		Calculator myCalc = new Calculator();
+		assertEquals(myCalc.multiply(6, 4),24);
 	}
 	
 	@Test
@@ -42,5 +43,15 @@ public class CalculatorTest {
 		Calculator myCalc = new Calculator();
 		assertEquals(myCalc.divide(1, 1),1, 0.00000001);
 		assertEquals(myCalc.divide(2, 0),Double.NaN, 0.00000001);
+	}
+	@Test
+	public void getCount() {
+		Calculator myCalc = new Calculator();
+		assertEquals(Calculator.getCount(),4);
+	}
+	@Test
+	public void getLocalCount() {
+		Calculator myCalc = new Calculator();
+		assertEquals(myCalc.getLocalCount(),4);
 	}
 }
